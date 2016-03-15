@@ -1653,7 +1653,341 @@ function pixova_lite_customize_register( $wp_customize ) {
 			)
 		);
 
+		/* Section Chart #5 */
+		$wp_customize->add_section('pixova_lite_section_chart_5',
+			array(
+				'title' 	=> esc_html__('Section Chart #5', 'pixova-lite'),
+				'priority' 	=> 5,
+				'panel' 	=> 'pixova_lite_panel_about'
+			)
+		);
 
+		/* Chart #5 Heading */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_5_heading',
+			array(
+				'sanitize_callback' => 'sanitize_text_field',
+				'default' => esc_html__('Graphic identity', 'pixova-lite'),
+				'transport' => 'postMessage'
+			)
+		);
+
+		$wp_customize->add_control('pixova_lite_about_section_chart_5_heading',
+			array(
+				'label' => esc_html__('Heading for chart', 'pixova-lite'),
+				'section' => 'pixova_lite_section_chart_5',
+				'priority' => 0
+			)
+		);
+
+		/* Chart #5 Settings */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_5_percentage',
+			array(
+					'sanitize_callback' => 'sanitize_text_field',
+					'default' => '50',
+					'transport' => 'postMessage'
+				)
+		);
+
+		$wp_customize->add_control( new Pixova_Lite_Number_Custom_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_5_percentage',
+				array(
+					'label' 	=> esc_html__('Chart Percentage', 'pixova-lite'),
+					'section' 	=> 'pixova_lite_section_chart_5',
+					'priority' 	=> 1,
+				)
+			)
+		);
+
+		/* Chart Bar Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_5_bar_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#2cc36b'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_5_bar_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart bar color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_5',
+					'priority' => 2
+				)
+			)
+		);
+
+		/* Chart Track Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_5_track_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#EEE'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_5_track_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart Track color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_5',
+					'priority' => 3
+				)
+			)
+		);
+
+		/* Section Chart #6 */
+		$wp_customize->add_section('pixova_lite_section_chart_6',
+			array(
+				'title' 	=> esc_html__('Section Chart #6', 'pixova-lite'),
+				'priority' 	=> 5,
+				'panel' 	=> 'pixova_lite_panel_about'
+			)
+		);
+
+		/* Chart #6 Heading */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_6_heading',
+			array(
+				'sanitize_callback' => 'sanitize_text_field',
+				'default' => esc_html__('Graphic identity', 'pixova-lite'),
+				'transport' => 'postMessage'
+			)
+		);
+
+		$wp_customize->add_control('pixova_lite_about_section_chart_6_heading',
+			array(
+				'label' => esc_html__('Heading for chart', 'pixova-lite'),
+				'section' => 'pixova_lite_section_chart_6',
+				'priority' => 0
+			)
+		);
+
+		/* Chart #6 Settings */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_6_percentage',
+			array(
+					'sanitize_callback' => 'sanitize_text_field',
+					'default' => '50',
+					'transport' => 'postMessage'
+				)
+		);
+
+		$wp_customize->add_control( new Pixova_Lite_Number_Custom_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_6_percentage',
+				array(
+					'label' 	=> esc_html__('Chart Percentage', 'pixova-lite'),
+					'section' 	=> 'pixova_lite_section_chart_6',
+					'priority' 	=> 1,
+				)
+			)
+		);
+
+		/* Chart Bar Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_6_bar_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#2cc36b'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_6_bar_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart bar color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_6',
+					'priority' => 2
+				)
+			)
+		);
+
+		/* Chart Track Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_6_track_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#EEE'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_6_track_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart Track color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_6',
+					'priority' => 3
+				)
+			)
+		);
+
+		/* Section Chart #7 */
+		$wp_customize->add_section('pixova_lite_section_chart_7',
+			array(
+				'title' 	=> esc_html__('Section Chart #7', 'pixova-lite'),
+				'priority' 	=> 5,
+				'panel' 	=> 'pixova_lite_panel_about'
+			)
+		);
+
+		/* Chart #7 Heading */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_7_heading',
+			array(
+				'sanitize_callback' => 'sanitize_text_field',
+				'default' => esc_html__('Graphic identity', 'pixova-lite'),
+				'transport' => 'postMessage'
+			)
+		);
+
+		$wp_customize->add_control('pixova_lite_about_section_chart_7_heading',
+			array(
+				'label' => esc_html__('Heading for chart', 'pixova-lite'),
+				'section' => 'pixova_lite_section_chart_7',
+				'priority' => 0
+			)
+		);
+
+		/* Chart #7 Settings */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_7_percentage',
+			array(
+					'sanitize_callback' => 'sanitize_text_field',
+					'default' => '50',
+					'transport' => 'postMessage'
+				)
+		);
+
+		$wp_customize->add_control( new Pixova_Lite_Number_Custom_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_7_percentage',
+				array(
+					'label' 	=> esc_html__('Chart Percentage', 'pixova-lite'),
+					'section' 	=> 'pixova_lite_section_chart_7',
+					'priority' 	=> 1,
+				)
+			)
+		);
+
+		/* Chart Bar Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_7_bar_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#2cc36b'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_7_bar_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart bar color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_7',
+					'priority' => 2
+				)
+			)
+		);
+
+		/* Chart Track Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_7_track_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#EEE'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_7_track_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart Track color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_7',
+					'priority' => 3
+				)
+			)
+		);
+
+		/* Section Chart #8 */
+		$wp_customize->add_section('pixova_lite_section_chart_8',
+			array(
+				'title' 	=> esc_html__('Section Chart #8', 'pixova-lite'),
+				'priority' 	=> 5,
+				'panel' 	=> 'pixova_lite_panel_about'
+			)
+		);
+
+		/* Chart #8 Heading */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_8_heading',
+			array(
+				'sanitize_callback' => 'sanitize_text_field',
+				'default' => esc_html__('Graphic identity', 'pixova-lite'),
+				'transport' => 'postMessage'
+			)
+		);
+
+		$wp_customize->add_control('pixova_lite_about_section_chart_8_heading',
+			array(
+				'label' => esc_html__('Heading for chart', 'pixova-lite'),
+				'section' => 'pixova_lite_section_chart_8',
+				'priority' => 0
+			)
+		);
+
+		/* Chart #8 Settings */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_8_percentage',
+			array(
+					'sanitize_callback' => 'sanitize_text_field',
+					'default' => '50',
+					'transport' => 'postMessage'
+				)
+		);
+
+		$wp_customize->add_control( new Pixova_Lite_Number_Custom_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_8_percentage',
+				array(
+					'label' 	=> esc_html__('Chart Percentage', 'pixova-lite'),
+					'section' 	=> 'pixova_lite_section_chart_8',
+					'priority' 	=> 1,
+				)
+			)
+		);
+
+		/* Chart Bar Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_8_bar_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#2cc36b'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_8_bar_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart bar color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_8',
+					'priority' => 2
+				)
+			)
+		);
+
+		/* Chart Track Color */
+		$wp_customize->add_setting('pixova_lite_about_section_chart_8_track_color',
+			array(
+				'sanitize_callback' => 'pixova_lite_sanitize_hex_color',
+				'default' => '#EEE'
+			)
+		);
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize,
+			'pixova_lite_about_section_chart_8_track_color',
+				array(
+					'type' => 'color',
+					'label' => esc_html__('Chart Track color', 'pixova-lite'),
+					'section' => 'pixova_lite_section_chart_8',
+					'priority' => 3
+				)
+			)
+		);
 	/***********************************************/
 	/************** Recent Works  ***************/
 	/***********************************************/
